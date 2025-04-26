@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio JSONPlaceholder - Tarjetas</title>
+    <link  rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ejercicio JSONPlaceholder</h1>
+    
+    <div id="message" style="display: none;"></div>
+    
+    <!-- Formulario para crear un post -->
+    <h2>Crear nuevo Post</h2>
+    <form id="postForm">
+        <div class="form-group">
+            <label for="title">Título:</label>
+            <input type="text" id="title" required>
+        </div>
+        <div class="form-group">
+            <label for="body">Contenido:</label>
+            <textarea id="body" required></textarea>
+        </div>
+        <button type="submit" id="createBtn">Crear Post</button>
+    </form>
+    
+    <!-- Contenedor para las tarjetas de posts -->
+    <h2>Posts</h2>
+    <div id="postsContainer" class="cards-container">
+        <div class="loading">Cargando posts...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

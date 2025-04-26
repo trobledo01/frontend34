@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Clima OpenWeather</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta del Clima</h1>
+        
+        <div id="error-message" class="error-message"></div>
+        
+        <div id="loading" class="loading">Cargando clima de Monterrey...</div>
+        <div id="weather-container"></div>
+        
+        <div class="search-section">
+            <p class="search-title">Buscar otra ciudad:</p>
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Ingresa el nombre de una ciudad...">
+                <button onclick="getWeather()">Buscar</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+   
+</body>
+</html>
